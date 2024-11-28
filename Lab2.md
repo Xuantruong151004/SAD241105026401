@@ -12,3 +12,6 @@
       Lớp trung gian để tương tác với cơ sở dữ liệu Employee, thực hiện các thao tác CRUD (Create, Read, Update, Delete).
     -ValidationService:
       Xác thực và kiểm tra tính hợp lệ của dữ liệu nhập vào như số ID nhân viên hoặc định dạng thông tin thanh toán.
+### Sơ đồ tuần tự (Sequence Diagram) cho ca sử dụng Employee
+
+   ![Diagram]((https://www.planttext.com/api/plantuml/png/T9B1JiGW48RlFCMa9pti2_HWTirwy61YDDdxB8m6CuK6Q3TzDWy-agyWfHJRjN8Wm_3D_3yJlZ-_zZwW2rt30cMm3gfd79nbXeDgjAa0_HI9Dc9QwXPDWEgXQTaEH4zey9rSmdAy1a_8Mc7GrhoIwxMaXEQilOAF6F2CdWuAsv2x7k_pQTj0OkQ34CagxEvcCpMWKlFr3ULWrBaL6HdfugU6VWeJSrLGADWj5Vhon1Vo7GU17FuaGVif9o2kXNHvNmtIKHJ-n-rOLjYr0KENCWAmvm-IOQqIuJIO-dTkurn8WU-a9E_VEkQX4iIUDfrhi-5zqVLnkeVPCiG66FiP9VPnYx_h1m00__y30000)
