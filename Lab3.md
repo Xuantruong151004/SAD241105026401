@@ -44,8 +44,79 @@
   Phương thức:
   printDocument: Thực hiện việc in tài liệu.
  - Biểu đồ ngữ cảnh cho ProjectManagementDatabase subsystems:
- - 
+ - ![diagram](https://www.planttext.com/api/plantuml/png/h5D1JiCm4Bpd5LPEhOJxW0YX7i8X1n1INx29jv71TY9xNQYWB-F0a_W2Jfg8H0u8fFfaxSxCUcVNd-yVMqTWoMkLj50zGOqitVdI7HsXPW-sUJccx3LXuLGAdEj2ZrZH7PY0rMWe1u8I70weywcH1c1Xzisg7UuYOpkoqjJhR1Jgw1EYRmKGJd8nzue52Cm4WjoXaQBNEIMdvBkNMqEIbbleYBD7HvNYt3reNCYMNeIECoOQNogS98Avv5t4u9mlcfKZWLHkjLweCNTc01fyplzkHc48xHug7FsGOu0L4u5BJBCl_FEkS7up6qF6Kej12m_eql_nphu4LjJ2zTjcyyk-1gxKhUg3WRv58xfly0K00F__0m00)
+ - Giải thích các thành phần trong biểu đồ:
+  - ProjectManagementDatabase:
+    Cung cấp và cập nhật thông tin dự án.
+  Phương thức:
+    getProjectInfo: Lấy thông tin dự án.
+    updateProjectData: Cập nhật thông tin dự án.
+  - ProjectData (Entity):
+    Lưu trữ thông tin dự án (mã dự án, tên dự án, ngân sách, trạng thái).
+   Phương thức:
+    getProjectDetails: Trả về chi tiết dự án.
+    updateProjectDetails: Cập nhật thông tin dự án.
+  - IProjectDatabase (Interface):
+      Giao diện để các hệ thống truy vấn thông tin dự án từ ProjectManagementDatabase.
+    Phương thức:
+      getProjectInfo: Lấy thông tin dự án.
+    
+2.Analysis class to design element map
+
+-ánh xạ các lớp phân tích đến các phần tử thiết kế:
+
+---
+
+| **Analysis Class**             | **Design Element**              |
+|--------------------------------|---------------------------------|
+| **LoginForm**                  | **LoginForm**                   |
+| **MaintainTimecardForm**       | **MainEmployeeForm**            |
+|                                | **TimecardForm**                |
+|                                |  **MainApplicationForm**        |
+| **TimecardController**         | **TimecardController**          |
+| **SystemClockInterface**       | **SystemClockInterface**        |
+| **PayrollController**          | **PayrollController**           |
+| **Paycheck**                   | **Paycheck**                    |
+| **PaymentInstruction**         | **PaymentInstruction**          |
+| **Employee**                   | **Employee**                    |
+| **IEmployeeRepository**        | **IEmployeeRepository**         |
+| **IPaymentRepository**         | **IPaymentRepository**          |
+| **BankSystem**                 | **BankSystem**                  |
+| **IBankSystem**                | **IBankSystem**                 |
+| **ProjectManagementDatabase**  | **ProjectManagementDatabase**   |
+| **IProjectDatabase**           | **IProjectDatabase**            |
+| **ProjectData**                | **ProjectData**                 |
+
+---
+
+3.Design element to owning package map
+
+-Hãy ánh xạ các phần tử thiết kế vào các gói:
+
+| **Design Element**        | **"Owning" Package**                        |
+|---------------------------|--------------------------------------------|
+| **UserInterface**          | Middleware::Presentation::GUI Framework    |
+| **PayrollController**      | Applications::Payroll::BusinessLogic       |
+| **TimecardController**     | Applications::Payroll::BusinessLogic       |
+| **EmployeeRepository**     | DataAccess::Employee::Repository           |
+| **PaymentRepository**      | DataAccess::Payment::Repository            |
+| **Database**               | DataAccess::Database::Connection           |
+| **Paycheck**               | BusinessServices::Payroll::Artifacts       |
+| **PaymentInstruction**     | BusinessServices::Payroll::Artifacts       |
+| **IEmployeeRepository**    | Interfaces::Employee::RepositoryInterface  |
+| **IPaymentRepository**     | Interfaces::Payment::RepositoryInterface   |
+| **IBankSystem**            | Interfaces::Bank::SystemInterface          |
+| **IProjectDatabase**       | Interfaces::Project::DatabaseInterface     |
+| **BankSystem**             | Subsystems::Bank::PaymentProcessing        |
+| **ProjectManagementDatabase** | Subsystems::Project::DatabaseManagement |
+| **ProjectData**            | BusinessServices::Project::DataArtifacts   |
+
+
+4.Architectural layers and their dependencies
+
+- ![PlanText](https://www.planttext.com/api/plantuml/png/X59BJiCm4Dtx54Cth7g1Bb1_4Pk0AW8769nfCNNioEDKYe2JiU18N04xAKb_KRsnv9dtbN-_VwRiqVcgqE8cfxKo14_9uddsU9yc83Ko2t4BotQYiIR7eaIvnGt1QEM8oNZqoXf8ut047mB2wJbMM3khzS8Q7szoualq3FEA0p4pf7QZv227KyPdv7PAqibeZcQRrUofECFOTvB-0KqGAeBB9NfyHQOZ_VW8CoaR2vV5awBKjgPJuP2BjIeZMzUF8zrqmM-gP76M7CRZpxkZC3215wR1rJxSbSN1i1tkKBIt4V0JoCZa37bimbjneDdi_SSFYq4b5aKCPMj33EjUmEvK7g4jfD6xXjztl0_HGPLPss0L96fPXSP9J4E4-8N_0000__y30000")
   
+
 
 
 
