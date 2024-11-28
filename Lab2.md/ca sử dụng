@@ -78,7 +78,8 @@
     -BankSystem:Hệ thống ngân hàng bên ngoài, chịu trách nhiệm xử lý giao dịch thanh toán (Direct Deposit).Trả về trạng thái giao dịch (thành công hoặc thất bại).
     -DatabaseAdapter:Lưu trữ kết quả giao dịch thanh toán và cập nhật trạng thái phiếu lương vào cơ sở dữ liệu.
   B.Biểu đồ sequence cho BankSystem:
-  ![Diagram](https://www.planttext.com/api/plantuml/png/d9D1QiCm44NtEeNmAe7a0eQMr9X0Tw7k1QRoc9h8aYgD2ZbR5prIhr0vaXqxDXIgXT68zsV-ZAMVh--38x3aEyb0aBOyEy75QYahj9-jm8o3u-c8cK2seZMWwCfrgEXajK3dj8ta4CtP0jJvgGP36B59l0IhYoFiHcuEb43m1WwdsSfYuKoyepWFtgy1OwaBld-ysSovYTlKpSOaVCj6fXTC3EVSeQeJ_u8V7jrKDY47uLZarO9oOSojLXiGGdj5pwhHEmvTluzYlh-lHpTPHK3UpOlC-rd286bvoX-uyw8NCHxMhDcooBatDH0EmukQiSjTF-EsphPNRLdSUuZYQZr_ZyO_aO-NY2UsyJ9ZA1sk6cwWbTxY_mmVWnZ_idnShx1gEILauJAmG_Y49_GB003__mC0
+
+  [diagram](https://www.planttext.com/api/plantuml/png/d9DHQiCm38RVVGgHfnRQ2mGskX0AUolBBg0v2WjrxCoM1ptR7dQaNM59xQH94nZC3y4oto_zKkoVh--3OxJi6oLGih6GdF1YZL85sSzQKWBe81w9jYDhMRUe-SerfFbaZIJdZ0ta4CtP3FNvgSIMAM2JU0aM5yVKZDmSo97n3HrDi-NPmfby9taUl5y38M8Ni7-ysKoX3TlOpQQD-5QCJ2-O64x1aIuZ_q8VdjnKDY47uLZarQ9stPXhepSefV6QdtLbTe1DlmzYsD_NuvkiO6JlvaNc_InXLBmyXGTmNlOY0TsQDPjdAVYsHAPXU44pThdhProNoVQgpRDx3q5ShEVlqV0dql4IGMGhhn91oj6guGfhvItzp_2n4zDVbe_h5LOjnuIYkmpYq7tw9_GB003__mC0)
 
   C.Nhiệm vụ của từng lớp:
     -PayrollService gửi yêu cầu thanh toán:Lớp PayrollService gửi yêu cầu xử lý thanh toán một phiếu lương (Paycheck) đến PaymentProcessor.
