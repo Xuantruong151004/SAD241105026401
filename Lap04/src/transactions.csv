@@ -1,0 +1,5 @@
+Date,Description,Amount,Type
+2024-12-01,Payment to Vendor A,-100.0,Expense
+2024-12-02,Payment from Client B,200.0,Income
+2024-12-03,Payment to Vendor B,-50.0,Expense
+2024-12-04,Payment from Client C, 300.0,Income
